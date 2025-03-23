@@ -21,10 +21,13 @@
   - [Cronograma](#cronograma)
   - [Materiais e Métodos](#materiais-e-métodos)
     - [Modelagem do Sistema](#modelagem-do-sistema)
+      - [Diagrama de Classe](#diagrama-de-classe)
     - [Tecnologias Utilizadas](#tecnologias-utilizadas)
     - [Arquitetura do Sistema](#arquitetura-do-sistema)
   - [Resultados](#resultados)
     - [Protótipo](#protótipo)
+      - [Protótipo do Teclado](#protótipo-do-teclado)
+      - [Protótipo da aplicação](#protótipo-da-aplicação)
     - [Códigos das Principais Funcionalidades](#códigos-das-principais-funcionalidades)
   - [Conclusão](#conclusão)
     - [Impacto do Sistema](#impacto-do-sistema)
@@ -177,7 +180,9 @@ Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as lic
 
 ### Modelagem do Sistema
 
-*<A modelagem do seu sistema são diagramas (desenhos) da sua estrutura ou comportamento. A UML (Unified Modelling Language) oferece diversos diagramas para que você possa modelar seu sistema. Escolha, pelo menos, dois modelos e insira aqui. Por exemplo, Modelo de Dados (Diagrama de Classe ou MER), Casos de Uso, Diagrama de Sequência, Diagrama de Atividades etc.>*
+#### Diagrama de Classe
+
+![structure](../assets/structure.png)
 
 ### Tecnologias Utilizadas
 
@@ -203,7 +208,9 @@ Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as lic
 
 ### Arquitetura do Sistema
 
-*<Insira aqui uma imagem contendo a arquitetura do sistema e o fluxo das informações. Se a arquitetura for muito simples, detalhe o fluxo dos processos.>*
+Temos uma aplicação baseada em TypeScript, com funcionalidades implementadas em C, para uma conversão rápida de JSON para binário. Esse conversor envia o binário para a aplicação, que, antes de permitir a alteração do layout, estabelece uma conexão com a porta COM onde está conectado o teclado do usuário, sendo possível o envio do binário para o firmware.
+
+![System Design](../assets/system_design.png)
 
 ---
 
@@ -211,15 +218,26 @@ Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as lic
 
 ### Protótipo
 
-*<São as telas do software e suas descrições. Em cada uma delas, descreva as ações possíveis do usuário e reações do sistema. Isto pode ser feito através do print das telas do seu sistema.>*
+#### Protótipo do Teclado
+
+Sua prototipagem está sendo mantida no repositório referente ao assunto. Para acompanhar, acesse:
+
+- [Prototipagem Layout](https://github.com/aeon-keyboard/pcb)
+- [Prototipagem Case](https://github.com/aeon-keyboard/case)
+
+#### Protótipo da aplicação
+
+Sua prototipagem está sendo mantida no repositório referente ao assunto. Para acompanhar, acesse:
+
+- [Front-end](https://github.com/aeon-keyboard/hub-front-end)
+- [Back-end](https://github.com/aeon-keyboard/hub-back-end)
 
 ### Códigos das Principais Funcionalidades
 
-<Copy-cole aqui as seções mais relevantes do seu código. Insira comentários sobre cada seção.>
+Todo código da aplicação é aberto com licença MIT, então sintase livre para acompanhar através dos links abaixo:
 
-```<linguagem>
-<seção de código com comentários>
-```
+- [Front-end](https://github.com/aeon-keyboard/hub-front-end)
+- [Back-end](https://github.com/aeon-keyboard/hub-back-end)
 
 ---
 
