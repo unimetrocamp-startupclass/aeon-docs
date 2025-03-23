@@ -70,19 +70,21 @@
 
 ## Introdução
 
-O projeto aeon surgiu a partir da necessidade de pessoas que passam longos períodos no computador e sofrem com dores causadas por má postura, ou se preocupam com esse tema. Além disso, existe uma dificuldade relativamente alta em configurar e personalizar teclados split disponíveis hoje no mercado, exigindo conhecimentos técnicos avançados.
+O projeto aeon surgiu para ajudar pessoas que passam longos períodos no computador e sofrem com dores causadas por má postura ou que se preocupam com ergonomia. Além disso, existe uma dificuldade relativamente alta em configurar e personalizar teclados split disponíveis hoje no mercado, exigindo conhecimentos técnicos avançados em firmware e programação.
 
-Para resolver esses problemas, o aeon será composto por duas frentes: a primeira, que será feita junto ao professor Mauro e o *Professor de Fisioterapia*, será o desenvolvimento de um teclado físico com layout ergonômico personalizado, baseado na estrutura do corpo do usuário final, promovendo a postura correta e o conforto. Em segundo lugar, com o professor Kasede, será criado um software intuitivo que permitirá ao usuário final configurar o teclado sem precisar reprogramá-lo manualmente, com recursos como criação de macros, suporte a múltiplos layouts (como Dvorak e Colemak), e uma plataforma gamificada para treinar digitação de forma divertida e eficaz.
+Para resolver esses problemas, aeon será composto por duas frentes: a primeira, que será desenvolvida junto ao professor Mauro e ao *professor de Fisioterapia*, será a criação de um teclado físico com layout ergonômico personalizado, baseado na experiência do usuário final, promovendo a postura correta e o conforto.
 
-As tecnologias que optamos por utilizar são: microcontroladores (nRF52840), firmware ZMK, API em C para gerar o keymap (layout do teclado) e uma interface web em React para facilitar a personalização do teclado. A gamificação será feita em TypeScript para integrar-se à aplicação web, transformando-a em um hub para entusiastas de teclados, além de um simples configurador.
+Em segundo lugar, com o professor Kasede, será criado um software intuitivo que permitirá ao usuário final configurar o teclado sem precisar reprogramá-lo manualmente, com recursos como criação de macros, suporte a múltiplos layouts (como Dvorak e Colemak), alteração do perfil RGB e uma plataforma gamificada para treinar digitação de forma divertida e eficaz.
 
-Impacto: O projeto Aeon vai criar um teclado pensado no corpo humano, e não um teclado ao qual precisamos nos adaptar para utilizar, promovendo saúde postural. Além disso, nossa segunda vertente permitirá uma personalização intuitiva e uma nova experiência de digitação no dia a dia, com treinamentos envolventes que facilitarão o aprendizado.
+As tecnologias que optamos por utilizar estão mais detalhadas no tópico de [Tecnologias Utilizadas](#tecnologias-utilizadas), mas, para uma introdução, é interessante mencionar os microcontroladores (dois nRF52840), firmware ZMK, API construída em C para gerar o keymap (layout do teclado) e uma interface web em React para facilitar a personalização do teclado. A gamificação será feita em TypeScript, uma vez que a aplicação é web. O TypeScript se comunica de forma nativa com JavaScript, linguagem nativa dos navegadores, transformando assim a plataforma em um hub para entusiastas de teclados.
+
+**Impacto:** O projeto aeon vai criar um teclado pensado para o corpo humano, e não um teclado ao qual precisamos nos adaptar para utilizar. No começo, existe uma curva de aprendizado, por termos usado teclados escalonados por anos, mas a mudança de layout físico promove maior saúde postural, já que estamos seguindo o fomato do corpo. Além disso, nossa segunda vertente permitirá uma personalização intuitiva e uma nova experiência de digitação no dia a dia, com treinamentos envolventes que facilitarão o aprendizado.
 
 ---
 
 ## Objetivo
 
-Criar um teclado split ergonômico e funcional, removendo a necessidade de o usuário final ter conhecimentos técnicos para recompilar o firmware e criando incentivos para que ele melhore sua velocidade de escrita.
+Criar um teclado split ergonômico e funcional, eliminando a necessidade do usuário final ter conhecimentos técnicos para recompilar o firmware e criar uma plataforma que ofereça incentivos para que ele treine a migração do layout e aumente sua velocidade e produtividade.
 
 ---
 
@@ -93,8 +95,8 @@ Criar um teclado split ergonômico e funcional, removendo a necessidade de o usu
 #### Requisitos funcionais (Teclado)
 
 - Desenho da PCB
-- Protótipo teclado
-- Teclado Final
+- Protótipo do teclado
+- Teclado final
 
 #### Requisitos não funcionais (Teclado)
 
@@ -102,21 +104,21 @@ Criar um teclado split ergonômico e funcional, removendo a necessidade de o usu
 - Case final
 - Criação de macros
 - Sem fio
-- Conexão bluetooth
+- Conexão Bluetooth
 
 ### Parte 2 - Software
 
 #### Requisitos funcionais (Software)
 
-- Conversor json to keymap
+- Conversor JSON para keymap
 - Interface para criação do layout
-- Envio do keymap para o Teclado (Sem fleshar)
+- Envio do keymap para o teclado (sem flash)
 
 #### Requisitos não funcionais (Software)
 
-- Gameficação do treinamento
-- Construção de Macros
-- layouts comuns
+- Gamificação do treinamento
+- Construção de macros
+- Layouts comuns
 - Customização do RGB
 
 ---
@@ -125,38 +127,39 @@ Criar um teclado split ergonômico e funcional, removendo a necessidade de o usu
 
 ### Teclado
 
-- Características Fisicas
+- Características Físicas
   - Melhores peças
   - Split
-  - Case de Aluminio
+  - Case de alumínio
   - RGB no topo
   - Gasket mount
   - HotSwap
-  - Pintura Anodizada
+  - Pintura anodizada
   - Three mode
   - Ortolinear
   - Potenciômetro
-- Característias do Firmware
+  - Trackball
+- Características do Firmware
   - Função sem fio
   - Three mode
-  - Rendenização de imagem
+  - Renderização de imagem
   - Interação com digitação
-  - Alteração de layout sem Flash
+  - Alteração de layout sem flash
 - Documentação
 - Apresentação
 
 ### Software
 
 - Funcionalidades
-  - Criação de Macros
+  - Criação de macros
   - Customização do RGB
-  - Gameficação para Treino
+  - Gamificação para digitação
   - Alteração de layout
 - UI/UX
-  - Dark and White mode
+  - Dark e White mode
   - Web
   - Velocidade
-  - Simplificação de Uso
+  - Simplificação de uso
 - Documentação
 - Apresentação
 
@@ -164,9 +167,9 @@ Criar um teclado split ergonômico e funcional, removendo a necessidade de o usu
 
 ## Cronograma
 
-Infelizmente, são dois projetos, e as datas são volátil, e as licenças de visualizações são cobradas no software utilizado (ClickUp). Portanto, apresentarei apenas uma imagem do cronograma feito no projeto do software. Caso tenha interesse em ver com mais detalhes, estarei à disposição.
+Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as licenças de visualização são cobradas no software utilizado (ClickUp). Portanto, apresentarei apenas uma imagem do cronograma feito no projeto do software. Caso haja interesse em ver com mais detalhes, estarei à disposição.
 
-![Gantt](./assets/Gantt.png)
+![Gantt](../assets/Gantt.png)
 
 ---
 
@@ -178,24 +181,25 @@ Infelizmente, são dois projetos, e as datas são volátil, e as licenças de vi
 
 ### Tecnologias Utilizadas
 
-- Obsidian: Modelagem UML
-- Typescript: Lógica do front-end
+- Obsidian: Modelagem UML e documentação
+- nRF52840: Microcontrolador com suporte a Bluetooth e bateria
+- TypeScript: Lógica do front-end e do Game
 - HTML/CSS: Front-end
 - C: Lógica da criação do layout e firmware
-- Click-up: Gerenciamento do Projeto
-- Jetbrains IDEs: IDEs para programar tudo
-- VS-CODE: Editor de texto
+- ClickUp: Gerenciamento do projeto
+- JetBrains IDEs: IDEs para programar tudo
+- VS Code: Editor de texto
 - Git: Versionamento
-- GitHub: Ospedagem e organização do projeto
-- AWS: Hospedagem da aplicação em Produção
-- GoDaddy: Compra de Dominio e gerenciador DNS
-- Docker: Escalar aplicação
+- GitHub: Hospedagem e organização do projeto
+- AWS: Hospedagem da aplicação em produção
+- GoDaddy: Compra de domínio e gerenciador DNS
+- Docker: Escalabilidade da aplicação
 - Nginx: Proxy reverso
-- Illustrato/Photoshop: Criação de Logo e Designs
+- Illustrator/Photoshop: Criação de logo e designs
 - KiCad: Criação da PCB
 - AI: Muita AI para ajudar kkk
 - ZMK: Firmware escolhido para controlar o teclado
-- Protocol Buffer: Linguagem de comunicação entre porta COM e Firmware
+- Protocol Buffer: Linguagem de comunicação entre a porta COM e o firmware
 
 ### Arquitetura do Sistema
 
