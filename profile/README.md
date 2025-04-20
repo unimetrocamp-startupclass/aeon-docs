@@ -172,7 +172,7 @@ Criar um teclado split ergonômico e funcional, eliminando a necessidade do usu�
 
 Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as licenças de visualização são cobradas no software utilizado (ClickUp). Portanto, apresentarei apenas uma imagem do cronograma feito no projeto do software. Caso haja interesse em ver com mais detalhes, estarei à disposição.
 
-![Gantt](../assets/Gantt.png)
+![Gantt](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/Gantt.png)
 
 ---
 
@@ -182,7 +182,7 @@ Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as lic
 
 #### Diagrama de Classe
 
-![structure](../assets/structure.png)
+![structure](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/structure.png)
 
 ### Tecnologias Utilizadas
 
@@ -210,7 +210,7 @@ Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as lic
 
 Temos uma aplicação baseada em TypeScript, com funcionalidades implementadas em C, para uma conversão rápida de JSON para binário. Esse conversor envia o binário para a aplicação, que, antes de permitir a alteração do layout, estabelece uma conexão com a porta COM onde está conectado o teclado do usuário, sendo possível o envio do binário para o firmware.
 
-![System Design](../assets/system_design.png)
+![System Design](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/system_design.png)
 
 ---
 
