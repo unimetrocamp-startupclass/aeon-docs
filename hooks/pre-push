@@ -4,34 +4,93 @@ set -euo pipefail
 remote_name="$1"
 remote_url="$2"
 
-if [[ "$remote_name" == "org" ]]; then
-    echo "→ Push para a organização. Sincronizando branch faculdade..."
-
-    git worktree prune
-
-    tmp_dir=$(mktemp -d)
-    git worktree add --quiet "$tmp_dir" faculdade || true
-
-    pushd "$tmp_dir" >/dev/null
-
-        git rm -r --cached . >/dev/null 2>&1 || true
-        rm -rf * .[^.]* 2>/dev/null || true
-
-        main_branch="$(git -C "$OLDPWD" symbolic-ref --short HEAD)"
-        git checkout "$main_branch" -- profile/README.md assets >/dev/null
-
-        mkdir -p profile
-        mv profile/README.md README.md
-        rm -rf profile
-
-        git add -A
-        if ! git diff --cached --quiet; then
-            git commit -m "Sync automático: $(date '+%F %T')" >/dev/null
-        fi
-
-    popd >/dev/null
-
-    git push fac faculdade:main
-
-    git worktree remove --force "$tmp_dir"
+# Check the remote name
+if [[ "$remote_name" != "org" ]]; then
+    exit 0
 fi
+
+echo "→ Push para a organização. Sincronizando branch universidade..."
+
+# Get the menssage commit and complement
+read -r local_ref local_sha remote_ref remote_sha || true
+commit_subject="$(git log -1 --format=%s "$local_sha")"
+sync_msg="Sync automático: $(date '+%F %T')"
+full_msg="${commit_subject}
+
+${sync_msg}"
+
+# Create the worktree
+git worktree prune
+tmp_dir=$(mktemp -d)
+git worktree add --quiet --force "$tmp_dir" university
+
+main_branch="$(git symbolic-ref --short HEAD)"
+
+pushd "$tmp_dir" >/dev/null
+    git rm -r --cached . >/dev/null 2>&1 || true
+    find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+
+    # pull the neccesery files
+    git checkout "$main_branch" -- profile/README.md assets hooks >/dev/null
+
+    mkdir -p profile
+    mv profile/README.md README.md
+    rm -rf profile
+
+    git add -A
+    if ! git diff --cached --quiet; then
+        git commit -m "$full_msg" >/dev/null
+    fi
+popd >/dev/null
+
+git push --force fac university:main
+
+git worktree remove --force "$tmp_dir"
+#!/usr/bin/env bash
+set -euo pipefail
+
+remote_name="$1"
+remote_url="$2"
+
+# Check the remote name
+if [[ "$remote_name" != "org" ]]; then
+    exit 0
+fi
+
+echo "→ Push para a organização. Sincronizando branch universidade..."
+
+# Get the menssage commit and complement
+read -r local_ref local_sha remote_ref remote_sha || true
+commit_subject="$(git log -1 --format=%s "$local_sha")"
+sync_msg="Sync automático: $(date '+%F %T')"
+full_msg="${commit_subject}
+
+${sync_msg}"
+
+# Create the worktree
+git worktree prune
+tmp_dir=$(mktemp -d)
+git worktree add --quiet --force "$tmp_dir" university
+
+main_branch="$(git symbolic-ref --short HEAD)"
+
+pushd "$tmp_dir" >/dev/null
+    git rm -r --cached . >/dev/null 2>&1 || true
+    find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+
+    # pull the neccesery files
+    git checkout "$main_branch" -- profile/README.md assets hooks >/dev/null
+
+    mkdir -p profile
+    mv profile/README.md README.md
+    rm -rf profile
+
+    git add -A
+    if ! git diff --cached --quiet; then
+        git commit -m "$full_msg" >/dev/null
+    fi
+popd >/dev/null
+
+git push --force fac university:main
+
+git worktree remove --force "$tmp_dir"
