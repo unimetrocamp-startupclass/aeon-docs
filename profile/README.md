@@ -67,7 +67,6 @@
 | --------------------------- |
 | Kesede Rodrigues Julio      |
 | *Mauro ...*                 |
-| *Professor de Fisioterapia* |
 
 ---
 
@@ -75,7 +74,7 @@
 
 O projeto aeon surgiu para ajudar pessoas que passam longos períodos no computador e sofrem com dores causadas por má postura ou que se preocupam com ergonomia. Além disso, existe uma dificuldade relativamente alta em configurar e personalizar teclados split disponíveis hoje no mercado, exigindo conhecimentos técnicos avançados em firmware e programação.
 
-Para resolver esses problemas, aeon será composto por duas frentes: a primeira, que será desenvolvida junto ao professor Mauro e ao *professor de Fisioterapia*, será a criação de um teclado físico com layout ergonômico personalizado, baseado na experiência do usuário final, promovendo a postura correta e o conforto.
+Para resolver esses problemas, aeon será composto por duas frentes: a primeira, que será desenvolvida junto ao professor Mauro, será a criação de um teclado físico com layout ergonômico personalizado, baseado na experiência do usuário final, promovendo a postura correta e o conforto.
 
 Em segundo lugar, com o professor Kasede, será criado um software intuitivo que permitirá ao usuário final configurar o teclado sem precisar reprogramá-lo manualmente, com recursos como criação de macros, suporte a múltiplos layouts (como Dvorak e Colemak), alteração do perfil RGB e uma plataforma gamificada para treinar digitação de forma divertida e eficaz.
 
