@@ -67,6 +67,7 @@
 | --------------------------- |
 | Kesede Rodrigues Julio      |
 | *Mauro ...*                 |
+| *Professor de Fisioterapia* |
 
 ---
 
