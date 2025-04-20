@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+remote_name="$1"
+remote_url="$2"
+
+if [[ "$remote_name" == "org" ]]; then
+    echo "→ Push para a organização. Sincronizando branch faculdade..."
+
+    git worktree prune
+
+    tmp_dir=$(mktemp -d)
+    git worktree add --quiet "$tmp_dir" faculdade || true
+
+    pushd "$tmp_dir" >/dev/null
+
+        git rm -r --cached . >/dev/null 2>&1 || true
+        rm -rf * .[^.]* 2>/dev/null || true
+
+        main_branch="$(git -C "$OLDPWD" symbolic-ref --short HEAD)"
+        git checkout "$main_branch" -- profile/README.md assets >/dev/null
+
+        mkdir -p profile
+        mv profile/README.md README.md
+        rm -rf profile
+
+        git add -A
+        if ! git diff --cached --quiet; then
+            git commit -m "Sync automático: $(date '+%F %T')" >/dev/null
+        fi
+
+    popd >/dev/null
+
+    git push fac faculdade:main
+
+    git worktree remove --force "$tmp_dir"
+fi
