@@ -32,6 +32,12 @@
   - [Conclusão](#conclusão)
     - [Impacto do Sistema](#impacto-do-sistema)
     - [Melhorias Futuras](#melhorias-futuras)
+      - [Melhoria no Prótotipo](#melhoria-no-prótotipo)
+      - [Melhoria no Software](#melhoria-no-software)
+  - [Homologação](#homologação)
+  - [Divulgação](#divulgação)
+    - [Linkedin do Projeto](#linkedin-do-projeto)
+  - [Seminário de Projetos de Software](#seminário-de-projetos-de-software)
   - [Relato Individual do Processo](#relato-individual-do-processo)
     - [Caio Pontes Magalhães](#caio-pontes-magalhães)
     - [David Henrique Queiroz Viotti Fernandes](#david-henrique-queiroz-viotti-fernandes)
@@ -55,11 +61,15 @@
 
 | Nome completo                           | Curso                  | Disciplina                          |
 | --------------------------------------- | ---------------------- | ----------------------------------- |
+| Alef *                                  | Ciências da Computação | Programação de Microcontroladores   |
+| André *                                 | Ciências da Computação | Programação de Microcontroladores   |
 | Caio Pontes Magalhães                   | Ciências da Computação | Programação de Software Básico em C |
 | David Henrique Queiroz Viotti Fernandes | Ciências da Computação | Programação de Software Básico em C |
+| Jean *                                  | Ciências da Computação | Programação de Microcontroladores   |
 | Laura  Santos Honório                   | Ciências da Computação | Programação de Software Básico em C |
 | Letícia Tavares Braga                   | Ciências da Computação | Programação de Software Básico em C |
 | Lizandra Gomes de Souza                 | Ciências da Computação | Programação de Software Básico em C |
+| Reian Reis *                            | Ciências da Computação | Programação de Microcontroladores   |
 
 ---
 
@@ -72,9 +82,9 @@
 
 ## Introdução
 
-O projeto aeon surgiu para ajudar pessoas que passam longos períodos no computador e sofrem com dores causadas por má postura ou que se preocupam com ergonomia. Além disso, existe uma dificuldade relativamente alta em configurar e personalizar teclados split disponíveis hoje no mercado, exigindo conhecimentos técnicos avançados em firmware e programação.
+O projeto aeon surgiu para ajudar pessoas que passam longos períodos no computador e sofrem com dores causadas por má postura ou que se preocupam com ergonomia. Além disso, existe uma dificuldade relativamente alta em configurar e personalizar teclados split disponíveis hoje no mercado, exigindo conhecimentos técnicos avançados em hardware e programação.
 
-Para resolver esses problemas, aeon será composto por duas frentes: a primeira, que será desenvolvida junto ao professor Mauro, será a criação de um teclado físico com layout ergonômico personalizado, baseado na experiência do usuário final, promovendo a postura correta e o conforto.
+Para resolver esses problemas, aeon será composto por duas frentes: a primeira, que será desenvolvida junto ao professor Mauro, será a criação de um teclado com layout ergonômico personalizado, baseado na experiência do usuário final, promovendo a postura correta e o conforto.
 
 Em segundo lugar, com o professor Kasede, será criado um software intuitivo que permitirá ao usuário final configurar o teclado sem precisar reprogramá-lo manualmente, com recursos como criação de macros, suporte a múltiplos layouts (como Dvorak e Colemak), alteração do perfil RGB e uma plataforma gamificada para treinar digitação de forma divertida e eficaz.
 
@@ -96,32 +106,34 @@ Criar um teclado split ergonômico e funcional, eliminando a necessidade do usu�
 
 #### Requisitos funcionais (Teclado)
 
-- Desenho da PCB
-- Protótipo do teclado
-- Teclado final
+- [x] Desenho da PCB
+- [x] Protótipo do teclado
+- [x] Teclado funcional
 
 #### Requisitos não funcionais (Teclado)
 
-- Melhores peças
-- Case final
-- Criação de macros
-- Sem fio
-- Conexão Bluetooth
+- [x] Melhores peças
+- [ ] Case final
+- [ ] Criação de macros
+- [ ] Sem fio
+- [ ] Conexão Bluetooth
+- [ ] Teclado Final
 
 ### Parte 2 - Software
 
 #### Requisitos funcionais (Software)
 
-- Conversor JSON para keymap
-- Interface para criação do layout
-- Envio do keymap para o teclado (sem flash)
+- [ ] Conversor JSON para keymap
+- [x] Interface para criação do layout
+- [ ] Home Page
 
 #### Requisitos não funcionais (Software)
 
-- Gamificação do treinamento
-- Construção de macros
-- Layouts comuns
-- Customização do RGB
+- [ ] Gamificação do treinamento
+- [ ] Construção de macros
+- [ ] Layouts comuns
+- [ ] Customização do RGB
+- [ ] Envio do keymap para o teclado (sem flash)
 
 ---
 
@@ -164,6 +176,8 @@ Criar um teclado split ergonômico e funcional, eliminando a necessidade do usu�
   - Simplificação de uso
 - Documentação
 - Apresentação
+
+O backlog principal está no nosso software de gestão, no qual estamos usando para manter a organização do projeto.
 
 ---
 
@@ -228,15 +242,16 @@ Sua prototipagem está sendo mantida no repositório referente ao assunto. Para 
 
 Sua prototipagem está sendo mantida no repositório referente ao assunto. Para acompanhar, acesse:
 
-- [Front-end](https://github.com/aeon-keyboard/hub-front-end)
-- [Back-end](https://github.com/aeon-keyboard/hub-back-end)
+- [Front-end](https://github.com/aeon-keyboard/aeon-fnd)
+- [Back-end](https://github.com/aeon-keyboard/aeon-bkd)
+- [Identidade Visual](https://github.com/aeon-keyboard/branding)
 
 ### Códigos das Principais Funcionalidades
 
 Todo código da aplicação é aberto com licença MIT, então sintase livre para acompanhar através dos links abaixo:
 
-- [Front-end](https://github.com/aeon-keyboard/hub-front-end)
-- [Back-end](https://github.com/aeon-keyboard/hub-back-end)
+- [Front-end](https://github.com/aeon-keyboard/aeon-fnd)
+- [Back-end](https://github.com/aeon-keyboard/aeon-bkd)
 
 ---
 
@@ -244,13 +259,44 @@ Todo código da aplicação é aberto com licença MIT, então sintase livre par
 
 ### Impacto do Sistema
 
-<Como o sistema impactou (alterou positivamente) o processo do cliente>
+Nosso usuário final está muito satisfeito com o modelo criado inicialmente. Ele teve uma curva de aprendizado consideravelmente alta — cerca de uma semana para conseguir digitar na mesma velocidade a que estava acostumado — considerando que já tinha prática em digitar corretamente.
+Porém, ele se sente muito confortável com o novo modelo de teclado, e isso trouxe apenas um inconveniente: agora ele tem dificuldades com teclados normais kkk.
 
 ### Melhorias Futuras
 
-<Elencar, pelo menos, uma melhoria que poderá ser realizada futuramente no sistema.>
+#### Melhoria no Prótotipo
+
+- Erramos ao prototipar a PCB; esqueci de enviar o arquivo com mais de duas camadas. Com isso, eu poderia ter conectado a bateria diretamente à PCB, o que deixaria o projeto mais premium.
+- Adição de baterias
+- Inclusão de trackpad
+
+#### Melhoria no Software
+
+- Inclusão de sistema de gamificação
+- Adicionar Kubernetes na gestão de containers
 
 ---
+
+## Homologação
+
+Após as entregas parciais, realizadas de acordo com os requisitos do sistema  e cronograma, o MVP foi apresentado em uma reunião, realizada entre o time de desenvolvedores e o cliente.
+
+<image>
+<image>
+<image>
+<image>
+
+## Divulgação
+
+### Linkedin do Projeto
+
+*[Link para o perfil do projeto no Linkedin](https://www.linkedin.com/in/aeon-teclado-a15697358/)*
+
+---
+
+## Seminário de Projetos de Software
+
+...
 
 ## Relato Individual do Processo
 
