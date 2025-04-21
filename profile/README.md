@@ -203,7 +203,7 @@ Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as lic
 - nRF52840: Microcontrolador com suporte a Bluetooth e bateria
 - TypeScript: Lógica do front-end e do Game
 - HTML/CSS: Front-end
-- C: Lógica da criação do layout e firmware
+- C#: Lógica da criação do layout e firmware
 - ClickUp: Gerenciamento do projeto
 - JetBrains IDEs: IDEs para programar tudo
 - VS Code: Editor de texto
@@ -221,7 +221,7 @@ Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as lic
 
 ### Arquitetura do Sistema
 
-Temos uma aplicação baseada em TypeScript, com funcionalidades implementadas em C, para uma conversão rápida de JSON para binário. Esse conversor envia o binário para a aplicação, que, antes de permitir a alteração do layout, estabelece uma conexão com a porta COM onde está conectado o teclado do usuário, sendo possível o envio do binário para o firmware.
+Temos uma aplicação baseada em TypeScript, com funcionalidades implementadas em C#, para uma conversão rápida de JSON para binário. Esse conversor envia o binário para a aplicação, que, antes de permitir a alteração do layout, estabelece uma conexão com a porta COM onde está conectado o teclado do usuário, sendo possível o envio do binário para o firmware.
 
 ![System Design](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/system_design.png)
 
