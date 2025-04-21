@@ -60,8 +60,12 @@ fi
 echo "→ Push para a organização. Sincronizando branch universidade..."
 
 # Get the menssage commit and complement
-read -r local_ref local_sha remote_ref remote_sha || true
-commit_subject="$(git log -1 --format=%s "$local_sha")"
+if read -r local_ref local_sha remote_ref remote_sha && [ -n "$local_sha" ]; then
+    commit_subject="$(git log -1 --format=%s "$local_sha")"
+else
+    local_sha=$(git rev-parse HEAD)
+    commit_subject="$(git log -1 --format=%s "$local_sha")"
+fi
 sync_msg="Sync automático: $(date '+%F %T')"
 full_msg="${commit_subject}
 
