@@ -321,8 +321,8 @@ Fotos com apresentação no dia do Seminário
 <div style="max-width: 480px; margin: 2em auto; text-align: center; font-family: sans-serif;">
   <a href="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/Carta de Autorizacao-LTD-Assinada.pdf" target="_blank" style="text-decoration: none; display: inline-block; position: relative;">
     <img
-      src="[../assets/icon_pdf.png](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/icon_pdf.png)"
-      alt="Apresentação para Espectadores"
+      src="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/icon_pdf.png"
+      alt="PDf"
       style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); transition: transform 0.3s ease-in-out;"
       onmouseover="this.style.transform='scale(1.02)'"
       onmouseout="this.style.transform='scale(1)'"
