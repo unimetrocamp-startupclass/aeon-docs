@@ -302,14 +302,13 @@ Porém, ele se sente muito confortável com o novo modelo de teclado, e isso tro
 
 Fotos com apresentação no dia do Seminário
 
-<a href="https://youtu.be/rgqZIPgFl2g" target="_blank" >
+<div href="https://youtu.be/rgqZIPgFl2g" target="_blank" align="center">
   <img
     src="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/tumb.png"
     alt="Apresentação do Projeto Aeon"
     width="640"
 />
-
-</a>
+</div>
 
 **Apresentação na semana da Tecnologia**
 ![Apresentacao](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/group_presentation.png)
@@ -320,13 +319,13 @@ Fotos com apresentação no dia do Seminário
 
 ## Carta de Autorização
 
-<a href="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/Carta de Autorizacao-LTD-Assinada.pdf" target="_blank" align="center">
+<div href="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/Carta de Autorizacao-LTD-Assinada.pdf" target="_blank" align="center">
   <img
     src="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/icon_pdf.png"
     alt="Autorização em PDF"
     width="210" />
     <p>📄 Clique na imagem para visualizar a autorização em PDF</p>
-</a>
+</div>
 
 
 ## Relato Individual do Processo
