@@ -318,33 +318,14 @@ Fotos com apresentação no dia do Seminário
 
 ## Carta de Autorização
 
-<div style="max-width: 480px; margin: 2em auto; text-align: center; font-family: sans-serif;">
-  <a href="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/Carta de Autorizacao-LTD-Assinada.pdf" target="_blank" style="text-decoration: none; display: inline-block; position: relative;">
-    <img
-      src="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/icon_pdf.png"
-      alt="PDf"
-      style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); transition: transform 0.3s ease-in-out;"
-      onmouseover="this.style.transform='scale(1.02)'"
-      onmouseout="this.style.transform='scale(1)'"
-    />
-    <div style="
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0,0,0,0.6);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    ">
-      📄 Ver PDF
-    </div>
-  </a>
-  <p style="color: #666; font-size: 0.9rem; margin-top: 0.5em;">Clique na imagem acima para visualizar a apresentação em PDF</p>
-</div>
+<a href="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/Carta de Autorizacao-LTD-Assinada.pdf" target="_blank" align="center">
+  <img
+    src="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/icon_pdf.png"
+    alt="Autorização em PDF"
+    style="border-radius: 12px; width: 100%; max-width: 210px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); cursor: pointer; " />
+    <p>📄 Clique na imagem para visualizar a autorização em PDF</p>
+</a>
+
 
 ## Relato Individual do Processo
 
