@@ -300,7 +300,7 @@ Porém, ele se sente muito confortável com o novo modelo de teclado, e isso tro
 
 ## Seminário de Projetos de Software
 
-Fotos com apresentação no dia do Seminário
+Fotos e video da apresentação no dia do Seminário
 
 <div href="https://youtu.be/rgqZIPgFl2g" target="_blank" align="center">
   <img
@@ -308,6 +308,7 @@ Fotos com apresentação no dia do Seminário
     alt="Apresentação do Projeto Aeon"
     width="640"
 />
+<p>Clique na imagem para visualizar o video</p>
 </div>
 
 **Apresentação na semana da Tecnologia**
