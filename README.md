@@ -302,11 +302,13 @@ Porém, ele se sente muito confortável com o novo modelo de teclado, e isso tro
 
 Fotos com apresentação no dia do Seminário
 
-<a href="https://youtu.be/rgqZIPgFl2g" target="_blank">
+<a href="https://youtu.be/rgqZIPgFl2g" target="_blank" >
   <img
     src="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/tumb.png"
     alt="Apresentação do Projeto Aeon"
-    style="border-radius: 12px; width: 100%; max-width: 640px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); cursor: pointer;" />
+    width="640"
+/>
+
 </a>
 
 **Apresentação na semana da Tecnologia**
@@ -322,7 +324,7 @@ Fotos com apresentação no dia do Seminário
   <img
     src="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/icon_pdf.png"
     alt="Autorização em PDF"
-    style="border-radius: 12px; width: 100%; max-width: 210px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); cursor: pointer; " />
+    width="210" />
     <p>📄 Clique na imagem para visualizar a autorização em PDF</p>
 </a>
 
