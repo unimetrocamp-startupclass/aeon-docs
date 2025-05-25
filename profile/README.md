@@ -38,12 +38,20 @@
   - [Divulgação](#divulgação)
     - [Linkedin do Projeto](#linkedin-do-projeto)
   - [Seminário de Projetos de Software](#seminário-de-projetos-de-software)
+  - [Carta de Autorização](#carta-de-autorização)
   - [Relato Individual do Processo](#relato-individual-do-processo)
+    - [Álefe Guímel Vieira de Lacerda](#álefe-guímel-vieira-de-lacerda)
+    - [André Luís da Silva Santos](#andré-luís-da-silva-santos)
     - [Caio Pontes Magalhães](#caio-pontes-magalhães)
     - [David Henrique Queiroz Viotti Fernandes](#david-henrique-queiroz-viotti-fernandes)
+    - [Jean \*](#jean-)
     - [Laura  Santos Honório](#laura--santos-honório)
     - [Letícia Tavares Braga](#letícia-tavares-braga)
+      - [Metodologia](#metodologia)
+      - [Resultados e Discussão](#resultados-e-discussão)
+      - [Considerações Finais](#considerações-finais)
     - [Lizandra Gomes de Souza](#lizandra-gomes-de-souza)
+    - [Reian Reis \*](#reian-reis-)
 
 ---
 
@@ -61,8 +69,8 @@
 
 | Nome completo                           | Curso                  | Disciplina                          |
 | --------------------------------------- | ---------------------- | ----------------------------------- |
-| Alef *                                  | Ciências da Computação | Programação de Microcontroladores   |
-| André *                                 | Ciências da Computação | Programação de Microcontroladores   |
+| Álefe Guímel Vieira de Lacerda          | Ciências da Computação | Programação de Microcontroladores   |
+| André Luís da Silva Santos              | Ciências da Computação | Programação de Microcontroladores   |
 | Caio Pontes Magalhães                   | Ciências da Computação | Programação de Software Básico em C |
 | David Henrique Queiroz Viotti Fernandes | Ciências da Computação | Programação de Software Básico em C |
 | Jean *                                  | Ciências da Computação | Programação de Microcontroladores   |
@@ -116,16 +124,16 @@ Criar um teclado split ergonômico e funcional, eliminando a necessidade do usu�
 - [ ] Case final
 - [ ] Criação de macros
 - [ ] Sem fio
-- [ ] Conexão Bluetooth
-- [ ] Teclado Final
+- [X] Conexão Bluetooth
+- [X] Teclado Final
 
 ### Parte 2 - Software
 
 #### Requisitos funcionais (Software)
 
-- [ ] Conversor JSON para keymap
+- [X] Conversor JSON para keymap
 - [x] Interface para criação do layout
-- [ ] Home Page
+- [X] Home Page
 
 #### Requisitos não funcionais (Software)
 
@@ -185,7 +193,7 @@ O backlog principal está no nosso software de gestão, no qual estamos usando p
 
 Infelizmente, são dois projetos, e as datas são voláteis. Além disso, as licenças de visualização são cobradas no software utilizado (ClickUp). Portanto, apresentarei apenas uma imagem do cronograma feito no projeto do software. Caso haja interesse em ver com mais detalhes, estarei à disposição.
 
-![Gantt](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/Gantt.png)
+![Gantt](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/gantt.png)
 
 ---
 
@@ -279,26 +287,70 @@ Porém, ele se sente muito confortável com o novo modelo de teclado, e isso tro
 
 ## Homologação
 
-Após as entregas parciais, realizadas de acordo com os requisitos do sistema  e cronograma, o MVP foi apresentado em uma reunião, realizada entre o time de desenvolvedores e o cliente.
-
-<image>
-<image>
-<image>
-<image>
+<afazer>
 
 ## Divulgação
 
 ### Linkedin do Projeto
 
+![Apresentacao](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/linkedin.png)
 *[Link para o perfil do projeto no Linkedin](https://www.linkedin.com/in/aeon-teclado-a15697358/)*
 
 ---
 
 ## Seminário de Projetos de Software
 
+Fotos com apresentação no dia do Seminário
+
+<a href="https://youtu.be/rgqZIPgFl2g" target="_blank">
+  <img
+    src="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/tumb.png"
+    alt="Apresentação do Projeto Aeon"
+    style="border-radius: 12px; width: 100%; max-width: 640px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); cursor: pointer;" />
+</a>
+
+**Apresentação na semana da Tecnologia**
+![Apresentacao](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/group_presentation.png)
+**Pessoal assistindo a apresentação do grupo**
+![Apresentacao](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/spectators_presentation.png)
+
 ...
 
+## Carta de Autorização
+
+<div style="max-width: 480px; margin: 2em auto; text-align: center; font-family: sans-serif;">
+  <a href="https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/Carta de Autorizacao-LTD-Assinada.pdf" target="_blank" style="text-decoration: none; display: inline-block; position: relative;">
+    <img
+      src="[../assets/icon_pdf.png](https://raw.githubusercontent.com/aeon-keyboard/.github/main/assets/icon_pdf.png)"
+      alt="Apresentação para Espectadores"
+      style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); transition: transform 0.3s ease-in-out;"
+      onmouseover="this.style.transform='scale(1.02)'"
+      onmouseout="this.style.transform='scale(1)'"
+    />
+    <div style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    ">
+      📄 Ver PDF
+    </div>
+  </a>
+  <p style="color: #666; font-size: 0.9rem; margin-top: 0.5em;">Clique na imagem acima para visualizar a apresentação em PDF</p>
+</div>
+
 ## Relato Individual do Processo
+
+### Álefe Guímel Vieira de Lacerda
+
+### André Luís da Silva Santos
 
 ### Caio Pontes Magalhães
 
@@ -311,7 +363,17 @@ Tive excelentes experiências com esse projeto e ainda vou ter. É algo ao qual 
 
 ### David Henrique Queiroz Viotti Fernandes
 
-<Um breve relato pessoal sobre o trabalho extensionista desenvolvido>
+Desenvolver um teclado ergonômico não é nada simples! Mas, conforme mergulhamos no desenvolvimento, ficou claro que estávamos lidando com algo muito além de apenas programação.
+
+Minha principal responsabilidade foi na parte de desenvolvimento e programação, e posso dizer com todas as letras: foi desafiador, sim, mas também extremamente enriquecedor. Um dos maiores perrengues foi colocar todo o sistema para rodar na nuvem. Na teoria, parecia algo direto… na prática, exigiu muito mais estudo, testes (muitos!), ajustes finos e uma boa dose de paciência. Cada detalhe fazia diferença: desde a comunicação entre os dispositivos até a responsividade e estabilidade do sistema. Tudo precisava funcionar de forma fluida e com excelência, porque quem vai usar realmente precisa que funcione.
+
+Mas sabe o que foi mais marcante? Ver o código ganhando vida. Trabalhar na prototipação e implementação de funcionalidades que tornaram o teclado acessível de verdade foi transformador. Assistir a esse projeto deixar de ser só “um sistema” para virar uma ferramenta que pode fazer diferença real na vida de alguém… não tem preço.
+
+Aprendi muito sobre acessibilidade, sobre integração com APIs e dispositivos físicos, e principalmente sobre como pensar no usuário final. E, nesse caso, o usuário final precisa de algo muito além do padrão. Isso mexeu comigo. Não só como programador, mas como ser humano.
+
+Esse projeto me ensinou que a verdadeira tecnologia não é a mais complexa — é a que alcança pessoas. Fazer parte de algo que é funcional, sim, mas também inclusivo, é uma experiência que eu vou levar para a vida toda. E o mais incrível? Isso é só o começo.
+
+### Jean *
 
 ### Laura  Santos Honório
 
@@ -319,8 +381,30 @@ Tive excelentes experiências com esse projeto e ainda vou ter. É algo ao qual 
 
 ### Letícia Tavares Braga
 
-<Um breve relato pessoal sobre o trabalho extensionista desenvolvido>
+Neste projeto, fomos desafiados a desenvolver uma aplicação que envolvesse a linguagem C. Achei a proposta bastante interessante e encarei como mais um desafio a ser superado, já que eu já havia programado em C anteriormente, em uma disciplina anterior.
+
+Minha principal contribuição foi na parte de frontend do projeto, ou seja, na construção da interface visual da aplicação, garantindo que ela fosse intuitiva e agradável para o usuário.
+
+#### Metodologia
+
+A experiência foi vivenciada na instituição de ensino em que estudamos, com a participação ativa minha, dos meus colegas e do professor orientador, todos mencionados neste mesmo documento. Também contamos com a colaboração do nosso cliente. O projeto foi desenvolvido ao longo de um semestre, entre fevereiro e junho de 2025.
+
+Inicialmente, realizamos reuniões para definir a ideia central do projeto, chegando a um consenso sobre o desenvolvimento de uma aplicação para reconfigurar as teclas de um teclado ergonômico, que foi criado em conjunto com outra disciplina que um colega de projeto cursava. Em seguida, iniciamos a construção do esboço do projeto no Figma. Após essa etapa, desenvolvemos o LinkedIn para documentação e divulgação. Logo após, iniciamos a construção do frontend e, em seguida, do backend. Por fim, tivemos que criar um banner para a apresentação desse mesmo projeto.
+
+#### Resultados e Discussão
+
+Tínhamos um esboço inicial e uma expectativa de como iríamos desenvolver este projeto, e, até o momento, tudo tem se concretizado conforme o planejado. Fiquei muito satisfeita com o resultado que estamos alcançando, e ver algo que antes era apenas uma ideia no papel se transformar em uma aplicação funcional é extremamente empolgante.
+
+Ao longo desse processo, aprendi e descobri muitas coisas novas. Senti mais facilidade na parte de frontend, pois eu já havia programado com linguagens um pouco parecidas anteriormente.
+
+Fiquei muito feliz com o quanto conseguimos avançar e estou gostando bastante do resultado até agora.
+
+#### Considerações Finais
+
+Embora o projeto ainda não esteja completamente finalizado, conseguimos entregar uma grande parte das principais funcionalidades, atendendo ao objetivo inicial da aplicação. No entanto, há um grande potencial para aprimoramentos futuros, tanto na melhoria dos recursos já existentes quanto na adição de novas funcionalidades que podem tornar a aplicação ainda mais completa e eficiente.
 
 ### Lizandra Gomes de Souza
 
 <Um breve relato pessoal sobre o trabalho extensionista desenvolvido>
+
+### Reian Reis *
